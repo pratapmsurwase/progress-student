@@ -1,3 +1,5 @@
+import { Type } from "@angular/compiler";
+
 export class User {  
  fullName : String;
  email: String;

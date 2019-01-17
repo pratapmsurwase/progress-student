@@ -9,7 +9,7 @@
 <label class="Validators.required">This Field is Required</label>
 </div>
 <input type="text"  #email="ngModel" [(ngModel)] = "userService.selectedUser.email" name="email" placeholder="Email" 
-required [pattern]="emailRegemailRegexex" [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid}">
+ [ngClass]="{'invalid-textbox' :signUpForm.submitted && !email.valid}">
 <div  *ng If="signUpForm.submitted && email.errors" >
   <label *ngIf="email.errors.required" class="validation-message">This Field is Required</label>
   <label *ngIf="email.errors.pattern" class="validation-message">Invalid email address.</label>
